@@ -72,9 +72,9 @@ model_filaments.txt - Shopping list with filament details and Amazon links
 
 ## 🖥️ Batch Script (Windows)
 
-### For easier use on Windows, use the included glbOBJ2Creality.bat script:
+### For easier use on Windows, use the included obj2creality.bat script:
 
-Place glbOBJ2Creality.bat in the same folder as obj2creality.exe
+Place obj2creality.bat in the same folder as obj2creality.exe
 Double-click the batch file
 Follow the interactive prompts:
 Enter folder path (e.g., C:\Models\Batman)
@@ -215,4 +215,5 @@ Examples:
 ​tinygltf​ - GLB/glTF loading library
 ​nlohmann/json​ - JSON parsing library
 ​3dfilamentprofiles.com​ - Filament color database
+
 
