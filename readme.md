@@ -143,16 +143,17 @@ Options:
 Supported formats: OBJ, GLB, glTF
 Supported textures: JPG, PNG, BMP, TGA
 
-Examples:
-  obj2creality model.glb -m PLA -c 8
-  obj2creality model.obj texture.png -m PETG
-  obj2creality model.glb -m PLA -c 4 -o myprint
+### Examples:
+  #### obj2creality model.glb -m PLA -c 8
+  #### obj2creality model.obj texture.png -m PETG
+  #### obj2creality model.glb -m PLA -c 4 -o myprint
 
 ## 🙏 Acknowledgments
 ​stb_image​ - Image loading library
 ​tinygltf​ - GLB/glTF loading library
 ​nlohmann/json​ - JSON parsing library
 ​3dfilamentprofiles.com​ - Filament color database
+
 
 
 
