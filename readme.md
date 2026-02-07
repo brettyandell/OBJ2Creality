@@ -121,68 +121,6 @@ CR-ABS - Standard ABS
 TPU Filaments (~6 colors)
 CR-TPU - Flexible TPU
 
-## 🔧 How It Works
-
-Load Model - Parses OBJ or GLB/glTF files, extracting vertices, UV coordinates, and triangles
-Load Texture - Loads embedded (GLB) or external texture files
-Filter Palette - Filters the Creality palette based on selected material type
-Sample Colors - Samples texture color at each vertex UV coordinate
-Match Colors - Finds closest Creality filament using CIELAB color distance
-Quantize (optional) - Reduces color count by keeping most-used colors and remapping others
-Export OBJ - Saves vertex-colored OBJ file with RGB values appended to vertex lines
-Generate List - Creates shopping list with filament names, RGB values, temperatures, and Amazon links
-Color Matching Algorithm
-The tool uses CIELAB (L*a*b*) color space for perceptually accurate color matching:
-
-Convert RGB to linear RGB (sRGB gamma correction)
-Convert linear RGB to XYZ color space
-Convert XYZ to CIELAB
-Calculate Euclidean distance in CIELAB space
-This produces much better results than simple RGB distance calculations.
-
-## 📋 Filament Shopping List
-
-### An example of the _filaments.txt file includes:
-
-
-=============================================================
-         FILAMENT SHOPPING LIST FOR CREALITY SLICER
-         Developed by Brett Yandell for the Monolith
-=============================================================
-
-Material Type: PLA
-Total Colors:  8 filament(s)
-Max Colors:    8 (quantized)
-
--------------------------------------------------------------
-                    FILAMENTS NEEDED
--------------------------------------------------------------
-
-SLOT 1: Hyper PLA White
-  Color:       #FFFFFF
-  RGB:         255, 255, 255
-  Type:        Hyper PLA
-  Nozzle Temp: 200C
-  Bed Temp:    50C
-  Usage:       12543 vertices (34.2%)
-  Amazon:      https://www.amazon.com/s?k=Creality+Hyper+PLA+White
-
-SLOT 2: Hyper PLA Black
-  Color:       #231F20
-  RGB:         35, 31, 32
-  ...
-
--------------------------------------------------------------
-                   QUICK AMAZON LINKS
--------------------------------------------------------------
-
-* Hyper PLA White:
-  https://www.amazon.com/s?k=Creality+Hyper+PLA+White
-
-* Hyper PLA Black:
-  https://www.amazon.com/s?k=Creality+Hyper+PLA+Black
-  ...
-
 ## 🖨️ Importing into Creality Print/Slicer
 
 Open Creality Print or Creality Slicer
@@ -215,5 +153,6 @@ Examples:
 ​tinygltf​ - GLB/glTF loading library
 ​nlohmann/json​ - JSON parsing library
 ​3dfilamentprofiles.com​ - Filament color database
+
 
 
