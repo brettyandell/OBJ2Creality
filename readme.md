@@ -66,40 +66,36 @@ obj2creality -list -m PLA
 obj2creality -list -m PETG
 
 # Output Files
-For input model.glb:
+## For input model.glb:
 
-model_vertexcolor.obj - OBJ with vertex colors for Creality Slicer
-model_filaments.txt - Shopping list with filament details and Amazon links
+### model_vertexcolor.obj - OBJ with vertex colors for Creality Slicer
+### model_filaments.txt - Shopping list with filament details and Amazon links
 
 ## 🖥️ Batch Script (Windows)
 
 ### For easier use on Windows, use the included obj2creality.bat script:
 
-Place obj2creality.bat in the same folder as obj2creality.exe
-Double-click the batch file
-Follow the interactive prompts:
-Enter folder path (e.g., C:\Models\Batman)
-Enter base file name (e.g., batman)
-Select material type (PLA, PETG, ABS, TPU, ALL)
-Enter max colors (or press Enter for unlimited)
-The tool will find all related files automatically:
-batman.glb or batman.obj
-batman.jpg, batman.png, etc.
-batman.mtl
+#### Place obj2creality.bat in the same folder as obj2creality.exe
+#### Double-click the batch file
+#### Follow the interactive prompts:
+#### Enter folder path (e.g., C:\Models\Batman)
+#### Enter base file name (e.g., batman)
+#### Select material type (PLA, PETG, ABS, TPU, ALL)
+#### Enter max colors (or press Enter for unlimited)
+#### The tool will find all related files automatically:
+##### batman.glb or batman.obj, batman.jpg, batman.mtl
 
 ## 📁 Supported Formats
 
 ### 3D Model Formats
-Format	Extension	Notes
-GLB	.glb	Binary glTF, supports embedded textures
-glTF	.gltf	JSON glTF
-OBJ	.obj	Wavefront OBJ, uses MTL for materials
-Texture Formats
-Format	Extension
-JPEG	.jpg, .jpeg
-PNG	.png
-BMP	.bmp
-TGA	.tga
+#### GLB	.glb	Binary glTF, supports embedded textures
+#### OBJ	.obj	Wavefront OBJ, uses MTL for materials
+
+### Texture Formats
+#### JPEG	.jpg, .jpeg
+#### PNG	.png
+#### BMP	.bmp
+#### TGA	.tga
 
 ## 🎨 Supported Filaments
 
@@ -155,6 +151,7 @@ Supported textures: JPG, PNG, BMP, TGA
 ​tinygltf​ - GLB/glTF loading library
 ​nlohmann/json​ - JSON parsing library
 ​3dfilamentprofiles.com​ - Filament color database
+
 
 
 
