@@ -123,7 +123,7 @@ CR-TPU - Flexible TPU
 
 ## 🖨️ Importing into Creality Print/Slicer
 
-Open Creality Print or Creality Slicer
+### Open Creality Print or Creality Slicer
 Go to File > Import and select the *_vertexcolor.obj file
 The model should appear with vertex colors visible
 Add filament slots matching the colors in your *_filaments.txt file
@@ -134,7 +134,7 @@ Slice and print!
 
 Usage: obj2creality <model> [texture] [options]
 
-Options:
+### Options:
   -o <name>       Output file base name
   -m <material>   Material type: PLA, PETG, ABS, TPU, ALL (default: ALL)
   -c <count>      Max colors to use (quantization), 0 = unlimited
@@ -145,7 +145,7 @@ Supported textures: JPG, PNG, BMP, TGA
 
 ### Examples:
   #### obj2creality model.glb -m PLA -c 8
-  #### obj2creality model.obj texture.png -m PETG
+  #### obj2creality model.obj texture.jpg -m PLA
   #### obj2creality model.glb -m PLA -c 4 -o myprint
 
 ## 🙏 Acknowledgments
@@ -153,6 +153,7 @@ Supported textures: JPG, PNG, BMP, TGA
 ​tinygltf​ - GLB/glTF loading library
 ​nlohmann/json​ - JSON parsing library
 ​3dfilamentprofiles.com​ - Filament color database
+
 
 
 
