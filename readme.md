@@ -125,11 +125,12 @@ CR-TPU - Flexible TPU
 ## 🖨️ Importing into Creality Print/Slicer
 
 ### Open Creality Print or Creality Slicer
-Go to File > Import and select the *_vertexcolor.obj file
-The model should appear with vertex colors visible
-Add filament slots matching the colors in your *_filaments.txt file
-Assign filaments to the model based on vertex colors
-Slice and print!
+
+#### Go to File > Import and select the *_vertexcolor.obj file
+#### The model should appear with vertex colors visible
+#### Add filament slots matching the colors in your *_filaments.txt file
+#### Assign filaments to the model based on vertex colors
+#### Slice and print!
 
 ## 📊 Command Reference
 
@@ -154,6 +155,7 @@ Supported textures: JPG, PNG, BMP, TGA
 ​tinygltf​ - GLB/glTF loading library
 ​nlohmann/json​ - JSON parsing library
 ​3dfilamentprofiles.com​ - Filament color database
+
 
 
 
