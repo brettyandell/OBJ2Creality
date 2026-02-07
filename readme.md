@@ -47,24 +47,25 @@ Examples
 # Basic GLB conversion (auto-detects embedded texture)
 obj2creality model.glb
 
-# OBJ with external texture
-obj2creality model.obj texture.png
+OBJ with external texture
+obj2creality model.obj texture.jpg
 
-# PLA filaments only, limit to 8 colors
+PLA filaments only, limit to 8 colors
 obj2creality model.glb -m PLA -c 8
 
-# PETG filaments only
+PETG filaments only
 obj2creality model.glb -m PETG
 
-# Custom output name, 4 color limit
+Custom output name, 4 color limit
 obj2creality character.glb -m PLA -c 4 -o myprint
 
-# List all available PLA colors
+List all available PLA colors
 obj2creality -list -m PLA
 
-# List all available PETG colors
+List all available PETG colors
 obj2creality -list -m PETG
-Output Files
+
+## Output Files
 For input model.glb:
 
 model_vertexcolor.obj - OBJ with vertex colors for Creality Slicer
@@ -153,6 +154,7 @@ Supported textures: JPG, PNG, BMP, TGA
 ​tinygltf​ - GLB/glTF loading library
 ​nlohmann/json​ - JSON parsing library
 ​3dfilamentprofiles.com​ - Filament color database
+
 
 
 
